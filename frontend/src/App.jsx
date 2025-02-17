@@ -23,7 +23,7 @@ function App() {
 
     return (
         <div className="search-container">
-            <h1>🔍 ค้นหาจังหวัด</h1>
+            <h1> ค้นหาจังหวัด</h1>
             <input
                 type="text"
                 value={query}

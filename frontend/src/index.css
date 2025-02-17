@@ -1,38 +1,98 @@
+/* พื้นหลังของหน้าจอ */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* กล่องค้นหา (Card Style) */
 .search-container {
   text-align: center;
-  margin: 50px auto;
-  max-width: 500px;
+  padding: 30px;
+  width: 450px;
+  background: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px #0d0d0d, -10px -10px 20px #292929;
 }
 
+/* หัวข้อ */
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #8b00e8;
+}
+
+/* Input Field */
 input {
-  width: 80%;
-  padding: 10px;
+  width: 90%;
+  padding: 12px;
   margin: 10px 0;
-  border: 2px solid #ccc;
-  border-radius: 5px;
+  border: none;
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: inset 5px 5px 10px #0f0f0f, inset -5px -5px 10px #2a2a2a;
+  outline: none;
+  transition: 0.3s ease-in-out;
 }
 
+input:focus {
+  box-shadow: inset 3px 3px 8px #0d0d0d, inset -3px -3px 8px #3a3a3a;
+}
+
+/* ปุ่มกด */
 button {
-  padding: 10px 20px;
-  background-color: #28a745;
-  color: white;
+  padding: 12px 30px;
+  background: #8b00e8;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
   cursor: pointer;
+  box-shadow: 5px 5px 10px #0d0d0d, -5px -5px 10px #292929;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: #218838;
+  background: #8b00e8;
+  transform: scale(1.05);
 }
 
+/* รายการผลลัพธ์ */
 ul {
   list-style: none;
   padding: 0;
+  margin-top: 20px;
 }
 
 li {
-  background: #f8f9fa;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
+  background: #1a1a1a;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #0d0d0d, -5px -5px 10px #292929;
+  text-align: center;
+  font-size: 16px;
+  color: #8b00e8;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  background: #222;
+  transform: scale(1.05);
+}
+
+/* ข้อความแจ้งเตือน */
+p {
+  font-size: 16px;
+  color: #bbb;
 }
